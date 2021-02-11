@@ -72,8 +72,8 @@ function App() {
       <Router>
       <Navbar />
         <Switch >
-        <Route path="/">
-          {/* <Home /> */}
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </Router>
