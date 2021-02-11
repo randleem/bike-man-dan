@@ -17,7 +17,7 @@ const useStyles = makeStyles({
       width: '100%',
       margin: '0px',
     //   height: '6em',
-      background: potenchColor[0],
+      background: potenchColor[potenchColor.length-1],
     },
   });
 
@@ -55,15 +55,28 @@ export default function Navbar(props) {
         <AppBar className={classes.root}>
             <Toolbar>
             <Link to="/" >
-            <button className='btn-logo'>
-                <h1 > BIKE MAN DAN <i class="fas fa-bicycle"></i> </h1>
+                <button className='btn-logo'>
+                    <h1 > BIKE MAN DAN <i class="fas fa-bicycle"></i> </h1>
+                </button>
+            </Link>
+            <Link to="/about" >
+                <button className='btn-logo'>
+                    <h1 > About<i class="fas fa-bicycle"></i> </h1>
+                </button>
+            </Link>
+            <Link to="/services" >
+                <button className='btn-logo'>
+                    <h1 > Services<i class="fas fa-bicycle"></i> </h1>
+                </button>
+            </Link>
+            <Link to="/jobs" >
+                <button className='btn-logo'>
+                    <h1 > Individual Jobs<i class="fas fa-bicycle"></i> </h1>
                 </button>
             </Link>
             </Toolbar>
         </AppBar>
       </ElevationScroll>
-      <h1>Scroll to Elevate App Bar
-Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h1>
     </React.Fragment>
   );
 }

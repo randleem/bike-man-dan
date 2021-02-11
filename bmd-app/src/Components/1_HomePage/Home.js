@@ -1,4 +1,4 @@
-//rfce - shortcut
+//rfec - shortcut
 import React from 'react'
 
 function Home() {
