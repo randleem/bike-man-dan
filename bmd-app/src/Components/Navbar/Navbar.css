@@ -1,21 +1,16 @@
-.btn-logo {
+.nav-logo {
   background-color: #574b60; /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s;
-  margin: none;
+  margin: 3em;
+  padding: 3em;
   border: none;
   color: #ffffff;
 }
 
-.btn-logo:hover {
-  background-color: #574b60; /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s;
-  margin: none;
-  border: none;
+.nav-logo:hover {
   color: #dab001;
+}
+
+.nav-pages {
+  display: flex;
+  justify-content: right;
 }

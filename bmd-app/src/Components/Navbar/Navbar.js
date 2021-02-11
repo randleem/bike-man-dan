@@ -55,25 +55,27 @@ export default function Navbar(props) {
         <AppBar className={classes.root}>
             <Toolbar>
             <Link to="/" >
-                <button className='btn-logo'>
-                    <h1 > BIKE MAN DAN <i class="fas fa-bicycle"></i> </h1>
-                </button>
+                <span className='nav-logo'>
+                    <h1 > BIKE MAN DAN <i class="fas fa-home"></i> </h1>
+                </span>
             </Link>
+            <div className='nav-pages'>
             <Link to="/about" >
-                <button className='btn-logo'>
-                    <h1 > About<i class="fas fa-bicycle"></i> </h1>
-                </button>
+                <span className='nav-logo'>
+                    <h1 > About <i class="fas fa-bicycle"></i> </h1>
+                </span>
             </Link>
             <Link to="/services" >
-                <button className='btn-logo'>
-                    <h1 > Services<i class="fas fa-bicycle"></i> </h1>
-                </button>
+                <span className='nav-logo'>
+                    <h1 > Services <i class="fas fa-wrench"></i> </h1>
+                </span>
             </Link>
             <Link to="/jobs" >
-                <button className='btn-logo'>
-                    <h1 > Individual Jobs<i class="fas fa-bicycle"></i> </h1>
-                </button>
+                <span className='nav-logo'>
+                    <h1 > Individual Jobs <i class="fas fa-cog"></i> </h1>
+                </span>
             </Link>
+            </div>
             </Toolbar>
         </AppBar>
       </ElevationScroll>
