@@ -14,9 +14,8 @@ function HeroBanner() {
         <div className='hero-container'>
             {/* <img className='hero-image' src={pic2} alt='BMD at work'/> */}
             <div className='hero-content'>
-            <h1 className='hero-welcome'>Welcome to Bike Man Dan</h1>
-            <br></br>
-            <h3 className='hero-announcement'>{announcements}</h3>
+            <button className='hero-content' className='hero-welcome'>Welcome to Bike Man Dan</button>
+            <button className='hero-content' className='hero-announcement'>{announcements}</button>
             </div>
             
         </div>

@@ -13,3 +13,12 @@
   display: flex;
   justify-content: right;
 }
+
+.nav-number {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.nav-number:hover {
+  color: #dab001;
+}

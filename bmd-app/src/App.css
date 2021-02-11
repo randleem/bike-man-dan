@@ -1,3 +1,17 @@
+* {
+  outline: none;
+}
+
+body {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+}
+
 .App {
   text-align: center;
 }

@@ -76,6 +76,7 @@ export default function Navbar(props) {
                 </div>
             </Link>
             </div>
+            <a href="tel:07817925929" className='nav-number'><i class="fas fa-phone-alt"></i> 07817925929</a>
             </Toolbar>
         </AppBar>
       </ElevationScroll>
