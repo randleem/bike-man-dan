@@ -1,11 +1,6 @@
 import React from 'react';
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+
 
 //Material UI
 
@@ -69,14 +64,8 @@ function App() {
 
   return (
     <div>
-      <Router>
-      <Navbar />
-        <Switch >
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+      <Navbar />   
+            <Home id='home'/>
     </div>
   );
 }

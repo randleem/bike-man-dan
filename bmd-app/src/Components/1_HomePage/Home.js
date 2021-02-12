@@ -25,7 +25,7 @@ function Home() {
             <HeroBanner/>
             <p>Hello Home</p>
             <div className='home-left'>
-            <p>Hi, my name is Dan, your local mobile bicycle mechanic, I have been proudly serving cyclists in Birmingham and surrounding areas for over 10 years.</p>
+            <p>Hi, my name is Dan, your local mobile bicycle mechanic, I have been proudly serving cyclists in Birmingham and surrounding areas since 2011</p>
             </div>
             <div className='home-right'>
 

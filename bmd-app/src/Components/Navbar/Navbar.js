@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
 import './Navbar.css';
 
 //Material UI
@@ -54,27 +53,21 @@ export default function Navbar(props) {
       <ElevationScroll {...props} >
         <AppBar className={classes.root}>
             <Toolbar>
-            <Link to="/" >
+            <a href="#home">
                 <div className='nav-logo'>
                     <h1 > BIKE MAN DAN <i class="fas fa-home"></i> </h1>
                 </div>
-            </Link>
+                </a>
             <div className='nav-pages'>
-            <Link to="/about" >
                 <div className='nav-logo'>
                     <h1 > About <i class="fas fa-bicycle"></i> </h1>
                 </div>
-            </Link>
-            <Link to="/services" >
                 <div className='nav-logo'>
                     <h1 > Services <i class="fas fa-wrench"></i> </h1>
                 </div>
-            </Link>
-            <Link to="/jobs" >
                 <div className='nav-logo'>
                     <h1 > Individual Jobs <i class="fas fa-cog"></i> </h1>
                 </div>
-            </Link>
             </div>
             <a href="tel:07817925929" className='nav-number'><i class="fas fa-phone-alt"></i> 07817925929</a>
             </Toolbar>
