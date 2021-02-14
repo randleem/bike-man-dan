@@ -1,17 +1,12 @@
 import React from 'react';
 import './App.css';
 
-
-//Material UI
-
 //Components
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/1_HomePage/Home";
+import BookingForm from './Components/BookingForm/BookingForm';
 
 require('dotenv').config();
-
-
-
 
 // let apiKey = process.env.REACT_APP_AIRTABLE_API_KEY;
 // let baseKey = process.env.REACT_APP_AIRTABLE_BASE_ID;
@@ -65,9 +60,10 @@ function App() {
   return (
     <div>
       <Navbar />   
-            <Home id='home'/>
+      <Home id='home'/>
+      <BookingForm id='booking-form'/>
     </div>
-  );
+  )
 }
 
 export default App;

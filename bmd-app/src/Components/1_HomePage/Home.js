@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react'
 
 // Components
 import HeroBanner from '../HeroBanner/HeroBanner';
+import GoogleMaps from '../GoogleMaps/GoogleMaps';
 
 function Home() {
     const [googleReviews, setGoogleReviews] = useState([])
@@ -28,8 +29,10 @@ function Home() {
             <p>Hi, my name is Dan, your local mobile bicycle mechanic, I have been proudly serving cyclists in Birmingham and surrounding areas since 2011</p>
             </div>
             <div className='home-right'>
-
+            <div className='home-google-reviews'>
+            <GoogleMaps/>
             </div>
+        </div>
         </div>
     )
 }
