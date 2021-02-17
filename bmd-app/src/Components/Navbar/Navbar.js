@@ -38,27 +38,27 @@ export default function Navbar() {
     <nav className='navbar' style={{ ...navbarStyles, top: seeNav ? '0' : '-90px' }}>
       <a href="#home">
         <div className='nav-logo'>
-            <h1 > BIKE MAN DAN <i class="fas fa-home"></i> </h1>
+            <h1 > BIKE MAN DAN <i className="fas fa-home"></i> </h1>
         </div>
       </a>
       <div className='nav-pages'>
         <a href='#'>
           <div className='nav-logo'>
-              <h1 > Services <i class="fas fa-wrench"></i> </h1>
+              <h1 > Services <i className="fas fa-wrench"></i> </h1>
           </div>
         </a>
         <a href='#'>
           <div className='nav-logo'>
-              <h1 > Individual Jobs <i class="fas fa-cog"></i> </h1>
+              <h1 > Individual Jobs <i className="fas fa-cog"></i> </h1>
           </div>
         </a>
         <a href='#booking-form'>
           <div className='nav-logo'>
-              <h1 > BookingForm <i class="fas fa-bicycle"></i> </h1>
+              <h1 > BookingForm <i className="fas fa-bicycle"></i> </h1>
           </div>
         </a>
         </div>
-      <a href="tel:07817925929" className='nav-number'><i class="fas fa-phone-alt"></i> 07817925929</a>
+      <a href="tel:07817925929" className='nav-number'><i className="fas fa-phone-alt"></i> 07817925929</a>
     </nav>
   </div>
   );

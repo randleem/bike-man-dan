@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/1_HomePage/Home";
 import BookingForm from './Components/BookingForm/BookingForm';
+import Footer from './Components/Footer/Footer';
 
 require('dotenv').config();
 
@@ -62,6 +63,7 @@ function App() {
       <Navbar />   
       <Home id='home'/>
       <BookingForm id='booking-form'/>
+      <Footer />
     </div>
   )
 }
