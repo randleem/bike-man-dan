@@ -1,0 +1,20 @@
+.footer-container {
+  background-color: #dab001;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 10px 0px 30px 0px;
+}
+
+.footer-container > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+/* 
+.footer-link-item {
+  padding: 4rem 0rem 4rem 0rem;
+  width: 80%;
+} */

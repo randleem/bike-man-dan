@@ -1,0 +1,16 @@
+.areas-container {
+  display: flex;
+}
+
+.areas-child {
+  flex: 1;
+}
+
+.areas-google-map {
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.areas-text {
+  padding: 1em;
+}

@@ -1,3 +1,17 @@
+/* .navbar {
+  background-color: #574b60;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: top 0.3s;
+} */
+
 .nav-logo {
   /* Black w/ opacity */
   margin: 1em;
