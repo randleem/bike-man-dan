@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+
 import './Navbar.css';
 
 let potenchColor = ['#1f1f1f', '#134328','#0D2615', '#1F6F42', '#B7245C', '#EF476F', '#DAB001', '#CF5C36', '#EFF2F1', '#2C8C99', '#7C7C7C', '#F7F7F7', '#574B60', '#514663']
@@ -9,7 +9,7 @@ export default function Navbar() {
   const [seeNav, setSeeNav] = useState(true);  
 
   const navbarStyles = {
-  backgroundColor: '#574b60',
+  backgroundColor: `${potenchColor[3]}`,
   height: '80px',
   display: 'flex',
   justifyContent: 'center',
@@ -42,19 +42,19 @@ export default function Navbar() {
         </div>
       </a>
       <div className='nav-pages'>
-        <a href='#'>
+        <a href='#services'>
           <div className='nav-logo'>
               <h1 > Services <i className="fas fa-wrench"></i> </h1>
           </div>
         </a>
-        <a href='#'>
+        <a href='#prices'>
           <div className='nav-logo'>
               <h1 > Individual Jobs <i className="fas fa-cog"></i> </h1>
           </div>
         </a>
         <a href='#booking-form'>
           <div className='nav-logo'>
-              <h1 > BookingForm <i className="fas fa-bicycle"></i> </h1>
+              <h1 > Booking Form <i className="fas fa-bicycle"></i> </h1>
           </div>
         </a>
         </div>
