@@ -20,6 +20,7 @@ export default function Navbar() {
   width: '100%',
   zIndex: '999',
   transition: 'top 0.3s',
+  boxShadow: "0px 0px 20px -5px",
   }
 
   useEffect(() => {
