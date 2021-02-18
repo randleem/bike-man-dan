@@ -16,23 +16,29 @@
   /* Black w/ opacity */
   margin: 1em;
   border: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 .nav-logo:hover {
   color: #dab001;
 }
 
-.nav-pages {
-  display: flex;
+.nav-burger-menu {
+  background-color: #ffffff;
   justify-content: right;
+  top: 0;
+  position: fixed;
+  float: right;
 }
 
-.nav-number {
+.nav-number,
+.nav-title {
   color: #ffffff;
   font-size: 30px;
+  margin: 2em;
 }
 
-.nav-number:hover {
+.nav-number:hover,
+.nav-title:hover {
   color: #dab001;
 }
