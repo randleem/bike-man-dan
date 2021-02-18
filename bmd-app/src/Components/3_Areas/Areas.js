@@ -6,7 +6,7 @@ import WrappedMap from '../GoogleMaps/GoogleMaps';
 
 function Areas() {
     return (
-        <div className='areas-container'>
+        <div id='areas' className='areas-container'>
             <div className='areas-child areas-google-map'>
                 <WrappedMap 
                         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}

@@ -4,7 +4,7 @@ import ServicesCard from "../ServicesCard/ServicesCard";
 
 function Services() {
     return (
-        <div className='services-container'>
+        <div id='services' className='services-container'>
             <div className='services-introduction'>
                 <h1>Bike Servicing</h1>
                 <h3>To keep your bike in tip top condition, it's a good idea to have it serviced regularly - as often as every 4 months depending on how much you use it and where you store it. If you've ridden many miles between services be prepared for some parts to need replacing.</h3>

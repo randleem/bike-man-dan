@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 
 function About() {
     return (
-        <div className='about-container'>
+        <div id='about' className='about-container'>
             <div className='about-introduction'>
                 <h1>Bike Man Dan gets your two wheels back on the road</h1>
                 <div className='about-card-container'>
