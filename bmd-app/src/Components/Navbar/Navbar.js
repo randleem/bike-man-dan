@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BookNow from '../BookNow/BookNow';
 
 import './Navbar.css';
 
@@ -61,6 +62,7 @@ export default function Navbar() {
         </div>
       </a>
       <a href="tel:07817925929" className='nav-number'><i className="fas fa-phone-alt"></i> 07817925929</a>
+      <BookNow />
       {!seeMenu && <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>}
       {seeMenu && seeNav && <div className='nav-burger-menu'>
       <a href='#about' onClick={handleClose}>
