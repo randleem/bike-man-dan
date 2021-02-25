@@ -27,6 +27,7 @@
   background-color: #ffffff;
   justify-content: right;
   top: 0;
+  right: 0;
   position: fixed;
   float: right;
 }

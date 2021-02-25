@@ -11,8 +11,8 @@ export default function Navbar() {
   const [seeMenu, setSeeMenu] = useState(false);
 
   const navbarStyles = {
-  backgroundColor: `${potenchColor[3]}`,
-  height: '80px',
+  backgroundColor: `${potenchColor[1]}`,
+  height: '150px',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -45,7 +45,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {  
       const currentScrollPos = window.pageYOffset;
-      setSeeNav((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 90) || currentScrollPos < prevScrollPos);
+      setSeeNav((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 160) || currentScrollPos < prevScrollPos);
       setPrevScrollPos(currentScrollPos);
       setSeeMenu(false);
     };
@@ -55,14 +55,16 @@ export default function Navbar() {
 
   return (
   <div>
-    <nav className='navbar' style={{ ...navbarStyles, top: seeNav ? '0' : '-90px' }}>
+    <nav className='navbar' style={{ ...navbarStyles, top: seeNav ? '0' : '-160px' }}>
       <a href="http://bikemandan.co.uk/">
         <div className='nav-title'>
             <h1 > BIKE MAN DAN <i className="fas fa-home"></i> </h1>
         </div>
       </a>
-      <a href="tel:07817925929" className='nav-number'><i className="fas fa-phone-alt"></i> 07817925929</a>
-      <BookNow />
+      <a href="tel:07817925929" className='nav-number'><i className="fas fa-phone-volume"></i> 07817 925 929</a>
+      <button className='nav-book-now-button'>
+                <a href='#prices' > Book Now <i className="fas fa-angle-right"></i></a>
+            </button>
       {!seeMenu && <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>}
       {seeMenu && seeNav && <div className='nav-burger-menu'>
       <a href='#about' onClick={handleClose}>

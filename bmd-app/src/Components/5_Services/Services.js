@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Services.css';
 import ServicesCard from "../ServicesCard/ServicesCard";
 
 function Services() {
+const [otherServices, setOtherServices] = useState(false);
+
+function handleOther(){
+    setOtherServices(!otherServices);
+}
     return (
         <div id='services' className='services-container'>
             <div className='services-introduction'>
@@ -12,22 +17,78 @@ function Services() {
             </div>
             <div className='services-cards'>
                 <ServicesCard 
-                    title='Standard'
+                    title='On Site Puncture Repair or Gear Index'
                     imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
                     imageAlt='ladies bike with basket'
-                    backgroundColor='#514663'
-                    fontColor='#FFFFFF'
-                    body='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                    // backgroundColor='#514663'
+                    // fontColor='#FFFFFF'
+                    price='£35'
+                    summary='I will take off your wheel and fit you a brand new innertube or index your gears on site be that at home, work or on the roadside'
+                    detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
                 />
                 <ServicesCard 
-                    title='Standard'
+                    title='Standard Service'
                     imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
                     imageAlt='ladies bike with basket'
-                    backgroundColor='#CF5C36'
-                    body='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+                    // backgroundColor='#514663'
+                    // fontColor='#FFFFFF'
+                    price='£50'
+                    summary='Gets your bike safely back on the road'
+                    detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
                 />
+                <ServicesCard 
+                    title='Full Service'
+                    imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
+                    imageAlt='ladies bike with basket'
+                    // backgroundColor='#CF5C36'
+                    price='£130'
+                    summary='Get your bike in tip top condition'
+                    detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
+
+                />
+                </div>
+                <button className='services-button-other' onClick={handleOther}>{!otherServices ? 'Other Services' : 'Hide Other Services'}</button>
+                {otherServices && (<div className='services-cards-other services-cards'>
+                    <ServicesCard 
+                        title='Brake Blead'
+                        imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
+                        imageAlt='ladies bike with basket'
+                        // backgroundColor='#CF5C36'
+                        price='£30'
+                        summary='Blead brakes and refill brake fluid'
+                        detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
+                    />
+                     <ServicesCard 
+                        title='New Bike Build'
+                        imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
+                        imageAlt='ladies bike with basket'
+                        // backgroundColor='#CF5C36'
+                        price='£50'
+                        summary='I will assemble your new bike straight from the box'
+                        detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
+                    />
+                    <ServicesCard 
+                        title='Suspension'
+                        imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
+                        imageAlt='ladies bike with basket'
+                        // backgroundColor='#CF5C36'
+                        price='£ variable'
+                        summary='I will send off your bike to specialist suspension fixers whilst i continue to work on your bike'
+                        detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
+                    />
+                    <ServicesCard 
+                        title='Advice & Tuition'
+                        imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
+                        imageAlt='ladies bike with basket'
+                        // backgroundColor='#CF5C36'
+                        price='£ call me to find out'
+                        summary='Give me a call and we can discuss your specific requirements'
+                        detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
+                    />
+                   </div> 
+                )}
             </div>
-        </div>
+        
     )
 }
 
