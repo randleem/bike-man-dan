@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import BookNow from '../BookNow/BookNow';
 
+import logo from './bmd-logo.png'
 import './Navbar.css';
 
 let potenchColor = ['#1f1f1f', '#134328','#0D2615', '#1F6F42', '#B7245C', '#EF476F', '#DAB001', '#CF5C36', '#EFF2F1', '#2C8C99', '#7C7C7C', '#F7F7F7', '#574B60', '#514663']
@@ -9,21 +9,7 @@ export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0); 
   const [seeNav, setSeeNav] = useState(true);
   const [seeMenu, setSeeMenu] = useState(false);
-
-  const navbarStyles = {
-  backgroundColor: `${potenchColor[1]}`,
-  height: '150px',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  fontSize: '1.2rem',
-  position: 'fixed',
-  top: '0',
-  width: '100%',
-  zIndex: '999',
-  transition: 'top 0.3s',
-  boxShadow: "0px 0px 20px -5px",
-  }
+  const [mobileView, setMobileView] = useState(true);
 
   // Function to display Burger Menu
   function handleClick(){
@@ -35,6 +21,7 @@ export default function Navbar() {
     setSeeMenu(false);
   }
 
+  // I dont know what I was doing here///
   useEffect(() => {
     if (seeMenu){
 
@@ -53,18 +40,34 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, seeNav]);
 
+// looks for the size of the window and puts the book now btn in the burger menu if on mobile view
+useEffect(() => {
+  const inMobileView = () => {
+    if(window.innerWidth <= 700){
+      setMobileView(true);
+    }else{
+      setMobileView(false);
+    }
+  }
+  window.addEventListener('resize', inMobileView)
+  return () => window.removeEventListener('resize', inMobileView);
+}, [mobileView])
+
+
+
+
   return (
   <div>
-    <nav className='navbar' style={{ ...navbarStyles, top: seeNav ? '0' : '-160px' }}>
+    <nav className='navbar' style={{  top: seeNav ? '0' : '-160px' }}>
       <a href="http://bikemandan.co.uk/">
         <div className='nav-title'>
             <h1 > BIKE MAN DAN <i className="fas fa-home"></i> </h1>
         </div>
       </a>
       <a href="tel:07817925929" className='nav-number'><i className="fas fa-phone-volume"></i> 07817 925 929</a>
-      <button className='nav-book-now-button'>
+      {!mobileView && <button className='nav-book-now-button'>
                 <a href='#prices' > Book Now <i className="fas fa-angle-right"></i></a>
-            </button>
+            </button>}
       {!seeMenu && <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>}
       {seeMenu && seeNav && <div className='nav-burger-menu'>
       <a href='#about' onClick={handleClose}>
@@ -92,7 +95,11 @@ export default function Navbar() {
               <h1 > Booking Form </h1>
           </div>
         </a>
-        </div>}
+        {mobileView && <button className='nav-book-now-button'>
+                <a href='#prices' > Book Now <i className="fas fa-angle-right"></i></a>
+            </button>}
+        </div>
+      }
       
     </nav>
   </div>

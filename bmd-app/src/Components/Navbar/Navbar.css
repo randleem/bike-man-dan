@@ -1,16 +1,25 @@
-/* .navbar {
-  background-color: #574b60;
-  height: 80px;
+/* Moile Phone Screens Pixel 411px */
+@media screen and (max-width: 411px) {
+}
+
+/* Ipad width 768px */
+@media screen and (max-width: 768px) {
+}
+
+.navbar {
+  background-color: #1f6f42;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 18px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
   transition: top 0.3s;
-} */
+  box-shadow: 0px 0px 20px -5px;
+}
 
 .nav-logo {
   /* Black w/ opacity */
@@ -35,8 +44,7 @@
 .nav-number,
 .nav-title {
   color: #ffffff;
-  font-size: 30px;
-  margin: 2em;
+  margin: 1em;
 }
 
 .nav-number:hover,

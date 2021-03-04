@@ -15,7 +15,7 @@ require('dotenv').config();
 
 function App() {
   return (
-    <div>
+    <div className='app-container'>
       <Navbar />   
       <Home id='home'/>
       <About />

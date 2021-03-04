@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import "./ServicesCard.css";
 
-function ServicesCard({title, imageURL, summary, imageAlt, backgroundColor, fontColor}) {
+import Modal from 'react-modal';
+
+Modal.setAppElement("#root");
+
+function ServicesCard({title, imageURL, summary, imageAlt, backgroundColor, fontColor, detail}) {
 const [fullDetail, setFullDetail] = useState(false);
 
-function handleFullDetail(){
-    setFullDetail(!fullDetail)
-}
     return (
         <div className='services-card-container' style={{background: backgroundColor, color: fontColor}}>
             <div className='services-card-image'>
@@ -18,8 +19,28 @@ function handleFullDetail(){
             <div className='services-card-summary'>
                 <p>{summary}</p>
             </div>
-            <button className='services-card-more-info-button' onClick={handleFullDetail}>More Info</button>
-            
+            <button className='services-card-more-info-button' onClick={() => setFullDetail(true)}>More Info</button>
+            <Modal 
+                isOpen={fullDetail} 
+                onRequestClose={() => setFullDetail(false)}
+                style={
+                    {
+                        overlay: {
+                            backgroundColor: 'grey'
+                        },
+                        content: {
+                            color: 'black',
+                            borderRadius: '20px',
+                            maxWidth: '300px'
+                        }
+                    }
+                }
+            >
+                <button onClick={() => setFullDetail(false)}><i className="fas fa-times"></i></button>
+                <h2>{title}</h2>
+                <p>{detail}</p>
+                
+            </Modal>
         </div>
     )
 }
