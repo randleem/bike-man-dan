@@ -31,12 +31,12 @@ const [fullDetail, setFullDetail] = useState(false);
                         content: {
                             color: 'black',
                             borderRadius: '20px',
-                            maxWidth: '300px'
+                            // maxWidth: '300px'
                         }
                     }
                 }
             >
-                <button onClick={() => setFullDetail(false)}><i className="fas fa-times"></i></button>
+                <button className='services-card-modal-close' onClick={() => setFullDetail(false)}><i className="fas fa-times"></i></button>
                 <h2>{title}</h2>
                 <p>{detail}</p>
                 

@@ -40,7 +40,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, seeNav]);
 
-// looks for the size of the window and puts the book now btn in the burger menu if on mobile view
+// looks for the size of the window and puts the book now btn in the burger menu if on mobile
 useEffect(() => {
   const inMobileView = () => {
     if(window.innerWidth <= 700){
@@ -71,28 +71,28 @@ useEffect(() => {
       {!seeMenu && <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>}
       {seeMenu && seeNav && <div className='nav-burger-menu'>
       <a href='#about' onClick={handleClose}>
-          <div className='nav-logo'>
-              <h1 > About </h1>
+          <div className='nav-item'>
+              <h2 > About </h2>
           </div>
         </a>
         <a href='#areas' onClick={handleClose}>
-          <div className='nav-logo'>
-              <h1 > Areas </h1>
+          <div className='nav-item'>
+              <h2 > Areas </h2>
           </div>
         </a>
         <a href='#services' onClick={handleClose}>
-          <div className='nav-logo'>
-              <h1 > Services </h1>
+          <div className='nav-item'>
+              <h2 > Services </h2>
           </div>
         </a>
         <a href='#prices' onClick={handleClose}>
-          <div className='nav-logo'>
-              <h1 > Individual Jobs </h1>
+          <div className='nav-item'>
+              <h2 > Individual Jobs </h2>
           </div>
         </a>
         <a href='#booking-form' onClick={handleClose}>
-          <div className='nav-logo'>
-              <h1 > Booking Form </h1>
+          <div className='nav-item'>
+              <h2 > Booking Form </h2>
           </div>
         </a>
         {mobileView && <button className='nav-book-now-button'>
