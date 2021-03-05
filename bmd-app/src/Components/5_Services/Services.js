@@ -48,7 +48,7 @@ function handleOther(){
                 />
                 </div>
                 <button className='services-button-other' onClick={handleOther}>{!otherServices ? 'Other Services' : 'Hide Other Services'}</button>
-                {otherServices && (<div className='services-cards-other services-cards'>
+                {otherServices && (<div><div className='services-cards-other services-cards'>
                     <ServicesCard 
                         title='Brake Blead'
                         imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
@@ -76,6 +76,8 @@ function handleOther(){
                         summary='I will send off your bike to specialist suspension fixers whilst i continue to work on your bike'
                         detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
                     />
+                    </div>
+                    <div className='services-cards-other services-cards'>
                     <ServicesCard 
                         title='Advice & Tuition'
                         imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
@@ -86,7 +88,7 @@ function handleOther(){
                         detail={['fix one', 'fix two', 'fix 3', 'fix 4']}
                     />
                    </div> 
-                )}
+                   </div>)}
             </div>
         
     )
