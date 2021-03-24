@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import './Services.css';
 import ServicesCard from "../ServicesCard/ServicesCard";
+import pic1 from './service1.jpg'
+import pic2 from './service2.jpg'
+import pic3 from './service3.jpg'
 
 function Services() {
 const [otherServices, setOtherServices] = useState(false);
@@ -18,7 +21,7 @@ function handleOther(){
             <div className='services-cards'>
                 <ServicesCard 
                     title='On Site Puncture Repair or Gear Index'
-                    imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
+                    imageURL={pic2}
                     imageAlt='ladies bike with basket'
                     // backgroundColor='#514663'
                     // fontColor='#FFFFFF'
@@ -28,7 +31,7 @@ function handleOther(){
                 />
                 <ServicesCard 
                     title='Standard Service'
-                    imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
+                    imageURL={pic3}
                     imageAlt='ladies bike with basket'
                     // backgroundColor='#514663'
                     // fontColor='#FFFFFF'
@@ -38,7 +41,7 @@ function handleOther(){
                 />
                 <ServicesCard 
                     title='Full Service'
-                    imageURL='https://3378359.app.netsuite.com/core/media/media.nl?id=2400149&c=3378359&h=64a9c23e2b062ee46721'
+                    imageURL={pic1}
                     imageAlt='ladies bike with basket'
                     // backgroundColor='#CF5C36'
                     price='£130'

@@ -38,9 +38,9 @@ function Prices() {
             <h1>Prices</h1>
             <BookNow /> 
             <div className='prices-table'>
-                <div className='prices-table-header'>
+                {/* <div className='prices-table-header'>
                     <PricesTable data={prices} colums={columns}/>
-                </div>
+                </div> */}
             </div>
         </div>
     )
