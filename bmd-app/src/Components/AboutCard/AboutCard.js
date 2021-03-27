@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Card.css";
+import "./AboutCard.css";
 
-function Card({title, className, body}) {
+function AboutCard({title, className, body}) {
     return (
         <div className='card-container'>
             <div className='card-image-container'>
@@ -18,4 +18,4 @@ function Card({title, className, body}) {
     )
 }
 
-export default Card
+export default AboutCard

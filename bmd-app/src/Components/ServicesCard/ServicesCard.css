@@ -23,7 +23,10 @@
 .services-card-image > img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   /* margin: 0.2em; */
   /* padding-top: 0.5em; */
   /* padding: 1em; */

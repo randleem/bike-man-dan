@@ -8,10 +8,6 @@ body {
   align-items: center;
 }
 
-a {
-  text-decoration: none;
-}
-
 button {
   border: none;
   border-radius: 50px;
@@ -19,6 +15,11 @@ button {
   margin: 1em;
   font-size: 25px;
   background-color: #1f6f42;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none !important;
   color: #ffffff;
 }
 
