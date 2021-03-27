@@ -2,7 +2,7 @@
   background-color: #1f6f42;
   height: 75px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 18px;
   position: fixed;

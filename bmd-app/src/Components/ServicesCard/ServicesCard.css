@@ -1,16 +1,30 @@
-.services-card-container {
-  /* width: 200px; */
-  flex: 1;
-  overflow: hidden;
+.services-card-container-parent {
+  /* flex: 1; */
   box-shadow: 0px 0px 12px -5px;
   margin: 1em;
   border-radius: 20px;
 }
 
+.services-card-container {
+  /* width: 200px; */
+  /* flex: 1; */
+  /* overflow: hidden; */
+  /* box-shadow: 0px 0px 12px -5px;
+  margin: 1em;
+  border-radius: 20px; */
+  /* justify-content: space-between; */
+}
+
+/*Dan wants the on hover on Laptop & there on ipda<*/
+/* .services-card-container:hover {
+  box-shadow: 0px 0px 12px -5px;
+} */
+
 .services-card-image > img {
   width: 100%;
   height: auto;
   border-radius: 20px;
+  /* margin: 0.2em; */
   /* padding-top: 0.5em; */
   /* padding: 1em; */
 }
@@ -27,8 +41,20 @@
   float: right;
 }
 
+.services-card-summary {
+  overflow: hidden;
+}
+
 /* Ipad width 768px @media screen and (min-width: 768px) {
   .services-card-container {
     display: flex;
   }
 } */
+
+.services-card-more-info-button {
+  align-self: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  bottom: 0;
+}

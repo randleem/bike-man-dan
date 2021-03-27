@@ -9,6 +9,7 @@ function ServicesCard({title, imageURL, summary, imageAlt, backgroundColor, font
 const [fullDetail, setFullDetail] = useState(false);
 
     return (
+        <div className='services-card-container-parent'>
         <div className='services-card-container' style={{background: backgroundColor, color: fontColor}}>
             <div className='services-card-image'>
                 <img src={imageURL} alt={imageAlt} />
@@ -19,7 +20,10 @@ const [fullDetail, setFullDetail] = useState(false);
             <div className='services-card-summary'>
                 <p>{summary}</p>
             </div>
-            <button className='services-card-more-info-button' onClick={() => setFullDetail(true)}>More Info</button>
+            </div>
+            <div className='services-card-more-info-button'>
+            <button  onClick={() => setFullDetail(true)}>More Info</button>
+            </div>
             <Modal 
                 isOpen={fullDetail} 
                 onRequestClose={() => setFullDetail(false)}
@@ -41,6 +45,7 @@ const [fullDetail, setFullDetail] = useState(false);
                 <p>{detail}</p>
                 
             </Modal>
+        
         </div>
     )
 }
