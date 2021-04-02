@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import logo from './Bike_Man_Dan_Name_Footer.png';
 
 function Footer() {
 
@@ -8,6 +9,11 @@ function Footer() {
     // BMD Logo in bottom left corner
     return (
         <div className='footer-container'>
+            <div className='footer-logo'>
+                <a href="http://bikemandan.co.uk/">
+                    <img src={logo} alt='bike man dan logo' className='footer-logo'/>
+                </a>
+            </div>
             <div className='footer-wrapper'>
             <p>Contact Us</p>
             <div className='footer-number-container'>
@@ -20,6 +26,9 @@ function Footer() {
                 <a href="https://www.facebook.com/bmdbrum/" className='footer-facebook footer-link-item'><i className='fab fa-facebook-f'></i> Facebook</a>
             </div>    
             </div>   
+            <div>
+                
+            </div>
         </div>
     )
 }

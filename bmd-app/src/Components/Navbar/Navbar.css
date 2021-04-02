@@ -1,10 +1,10 @@
 .navbar {
   background-color: #1f6f42;
-  height: 75px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 18px;
+  font-size: 24px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -29,22 +29,35 @@
   float: right;
 }
 
-.nav-number,
-.nav-title {
+.nav-number {
   color: #ffffff;
   margin: 1em;
 }
 
+.nav-title-logo {
+  padding: 1rem;
+  margin-top: 0.4rem;
+}
+
 /* Desktop width 1200px */
 @media screen and (max-width: 1200px) {
+  .nav-title-logo {
+    width: 300px;
+  }
 }
 
 /* Laptop width 1024px */
 @media screen and (max-width: 1024px) {
+  .nav-title-logo {
+    width: 300px;
+  }
 }
 
 /* Ipad width 768px */
 @media screen and (max-width: 768px) {
+  .nav-title-logo {
+    width: 300px;
+  }
 }
 
 /* Moile Phone Screens Pixel 411px */
@@ -56,6 +69,25 @@
     width: 100%;
     position: fixed;
     float: right;
+  }
+  .nav-title-logo {
+    width: 300px;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2rem;
+    margin-top: 0.4rem;
+  }
+
+  .nav-burger-menu-btn {
+    padding: 0 !important;
+  }
+
+  .navbar {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    height: 120px;
   }
 }
 

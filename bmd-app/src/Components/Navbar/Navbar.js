@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import logo from './bmd-logo.png'
+import logo from './NameLogo.png';
 import './Navbar.css';
 
 let potenchColor = ['#1f1f1f', '#134328','#0D2615', '#1F6F42', '#B7245C', '#EF476F', '#DAB001', '#CF5C36', '#EFF2F1', '#2C8C99', '#7C7C7C', '#F7F7F7', '#574B60', '#514663']
@@ -32,7 +32,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {  
       const currentScrollPos = window.pageYOffset;
-      setSeeNav((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 160) || currentScrollPos < prevScrollPos);
+      setSeeNav((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 100) || currentScrollPos < prevScrollPos);
       setPrevScrollPos(currentScrollPos);
       setSeeMenu(false);
     };
@@ -58,10 +58,11 @@ useEffect(() => {
 
   return (
   <div>
-    <nav className='navbar' style={{  top: seeNav ? '0' : '-160px' }}>
+    <nav className='navbar' style={{  top: seeNav ? '0' : '-120px' }}>
       <a href="http://bikemandan.co.uk/">
         <div className='nav-title'>
-            <h1 > BIKE MAN DAN <i className="fas fa-home"></i> </h1>
+            {/* <h1 > BIKE MAN DAN <i className="fas fa-home"></i> </h1> */}
+            <img src={logo} alt='bike man dan logo' className='nav-title-logo'/>
         </div>
       </a>
       <a href="tel:07817925929" className='nav-number'><i className="fas fa-phone-volume"></i> 07817 925 929</a>
