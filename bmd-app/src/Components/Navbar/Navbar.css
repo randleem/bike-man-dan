@@ -13,6 +13,11 @@
   box-shadow: 0px 0px 20px -5px;
 }
 
+.nav-item-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .nav-item {
   /* Black w/ opacity */
   margin: 1em;

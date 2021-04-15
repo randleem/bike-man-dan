@@ -14,6 +14,7 @@ const [fullDetail, setFullDetail] = useState(false);
             <div className='services-card-image'>
                 <img src={imageURL} alt={imageAlt} />
             </div>
+            <div className="services-card-content">
             <div className='services-card-title'>
                 <h2>{title}</h2>
             </div>
@@ -23,6 +24,7 @@ const [fullDetail, setFullDetail] = useState(false);
             </div>
             <div className='services-card-more-info-button'>
             <button  onClick={() => setFullDetail(true)}>More Info</button>
+            </div>
             </div>
             <Modal 
                 isOpen={fullDetail} 

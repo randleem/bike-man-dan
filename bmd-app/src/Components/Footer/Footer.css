@@ -34,3 +34,29 @@
 .footer-link-item {
   padding-top: 1rem;
 }
+
+/* Moile Phone Screens Pixel 411px */
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    width: 70px;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .footer-wrapper {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .footer-wrapper > p {
+    padding: 0;
+  }
+
+  .footer-link-item {
+    padding-top: 1rem;
+  }
+
+  .footer-container {
+    padding: 10px 0px 10px 0px;
+  }
+}

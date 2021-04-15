@@ -4,6 +4,7 @@
 
 .services-cards {
   display: flex;
+  /* justify-content: space-between; */
 }
 
 .services-cards:hover {

@@ -65,6 +65,7 @@ useEffect(() => {
             <img src={logo} alt='bike man dan logo' className='nav-title-logo'/>
         </div>
       </a>
+      <div className="nav-item-container">
       <a href="tel:07817925929" className='nav-number'><i className="fas fa-phone-volume"></i> 07817 925 929</a>
       {!mobileView && <button className='nav-book-now-button'>
                 <a href='#prices' > Book Now <i className="fas fa-angle-right"></i></a>
@@ -100,7 +101,7 @@ useEffect(() => {
                 <a href='#prices' > Book Now <i className="fas fa-angle-right"></i></a>
             </button>}
         </div>
-      }
+      }</div>
       
     </nav>
   </div>

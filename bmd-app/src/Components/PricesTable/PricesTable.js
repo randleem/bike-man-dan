@@ -12,18 +12,18 @@ export default function PricesTable({ columns, data }) {
     prepareRow // Prepare the row (this function needs to be called for each row before getting the row props)
   } = useTable({
     columns,
-    data
+    data,
   });
-
+ 
   /* 
     Render the UI for your table
     - react-table doesn't have UI, it's headless. We just need to put the react-table props from the Hooks, and it will do its magic automatically
   */
   return (
-    <table {...getTableProps()}>
+    <table className="prices-table"{...getTableProps()}>
       <thead>
         {headerGroups.map(headerGroup => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
+          <tr className="prices-table-header" {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map(column => (
               <th {...column.getHeaderProps()}>{column.render("Header")}</th>
             ))}

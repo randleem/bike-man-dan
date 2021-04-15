@@ -1,0 +1,22 @@
+.prices-table {
+  justify-content: center;
+}
+
+th {
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.prices-table-header:first-child {
+  text-align: left;
+}
+
+td {
+  padding-bottom: 1rem;
+  font-size: 20px;
+}
+
+td:first-child {
+  text-align: left;
+}

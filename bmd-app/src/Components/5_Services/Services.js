@@ -22,7 +22,7 @@ function handleOther(){
             </div>
             <div className='services-cards'>
                 <ServicesCard 
-                    title='On Site Puncture Repair or Gear Index'
+                    title='On Site Repair'
                     imageURL={pic2}
                     imageAlt='ladies bike with basket'
                     // backgroundColor='#514663'
