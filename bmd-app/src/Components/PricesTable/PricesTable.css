@@ -6,6 +6,9 @@ th {
   padding-bottom: 1rem;
   font-weight: bold;
   font-size: 24px;
+  background-color: #dab001;
+  color: #fff;
+  align-items: center;
 }
 
 .prices-table-header:first-child {
