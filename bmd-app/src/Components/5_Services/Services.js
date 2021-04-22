@@ -94,6 +94,31 @@ function handleOther(){
                     />
                    </div> 
                    </div>)}
+                   <div className="services-grid-container">
+                        <div className="services-grid-type">
+                            <div className="services-grid-content">
+                                <h1>Standard</h1>
+                            </div>
+                            <div className="services-grid-content">
+                                <h1>Advanced</h1>
+                            </div>
+                            <div className="services-grid-content">
+                                <h1>full</h1>
+                            </div>
+                        </div>
+                        <div className="services-grid-price">
+                            <div className="services-grid-content">
+                                <h2>£65</h2>
+                            </div>
+                            <div className="services-grid-content">
+                                <h2>£85</h2>
+                            </div>
+                            <div className="services-grid-content">
+                                <h2>£120</h2>
+                            </div>
+                        </div>
+
+                   </div>
             </div>
         
     )
