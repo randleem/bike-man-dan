@@ -18,11 +18,13 @@ function App() {
     <div className='app-container'>
       <Navbar />   
       <Home id='home'/>
+      <div className='central-container'>
       <About />
       <Areas />
       <Services />
       <Prices />
       <BookingForm id='booking-form'/>
+      </div>
       <Footer />
     </div>
   )
