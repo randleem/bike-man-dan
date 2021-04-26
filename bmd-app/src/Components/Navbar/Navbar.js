@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import LoginButton from "../Login/Login";
 import logo from './NameLogo.png';
 import './Navbar.css';
 
@@ -97,6 +97,7 @@ useEffect(() => {
               <h2 > Booking Form </h2>
           </div>
         </a>
+        <LoginButton/>
         {mobileView && <button className='nav-book-now-button'>
                 <a href='#prices' > Book Now <i className="fas fa-angle-right"></i></a>
             </button>}

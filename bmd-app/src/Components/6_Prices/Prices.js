@@ -6,31 +6,29 @@ import "./Prices.css";
 
 function Prices() {
 
-   
     const columns = [
       {
         Header: "Individual Jobs",
         accessor: "Individual_Jobs"
       },
       {
-        Header: "Price (min £35)",
+        Header: "Individual Jobs",
         accessor: "Price"
       },
       
       {
-        Header: "Standard £50",
+        Header: "Standard £60",
         accessor: "STANDARD"
       },
       {
-        Header: "Advanced£85",
+        Header: "Advanced £85",
         accessor: "ADVANCED"
       },{
-        Header: "Full £85",
+        Header: "Full £130",
         accessor: "FULL"
       },
     ]
           
-
     return (
         <div id='prices' className='prices-container'>
             <h1>Prices</h1>

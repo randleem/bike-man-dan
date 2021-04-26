@@ -1,5 +1,12 @@
 import React from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 //Components
 import Navbar from "./Components/Navbar/Navbar";
@@ -10,13 +17,20 @@ import Services from "./Components/5_Services/Services";
 import Prices from "./Components/6_Prices/Prices";
 import BookingForm from './Components/BookingForm/BookingForm';
 import Footer from './Components/Footer/Footer';
+import CustomerPage from "./Components/7_CustomerPage/CustomerPage";
 
 require('dotenv').config();
 
 function App() {
   return (
     <div className='app-container'>
-      <Navbar />   
+      <Navbar />
+      <Router>
+      <Switch>
+          <Route path="/customer">
+            <CustomerPage />
+          </Route>
+          <Route path="/">
       <Home id='home'/>
       <div className='central-container'>
       <About />
@@ -25,6 +39,9 @@ function App() {
       <Prices />
       <BookingForm id='booking-form'/>
       </div>
+      </Route>
+      </Switch>
+      </Router>
       <Footer />
     </div>
   )

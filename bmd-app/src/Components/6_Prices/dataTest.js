@@ -7,7 +7,14 @@ const prices = [
       "FULL": "✔️"
     },
     {
-      "Individual_Jobs": "Gears Serviced",
+      "Individual_Jobs": "Individual Gear Service",
+      "Price": "£12.50",
+      "STANDARD": "✔️",
+      "ADVANCED": "✔️",
+      "FULL": "✔️"
+    },
+    {
+      "Individual_Jobs": "Gear Service (front & back)",
       "Price": "£25",
       "STANDARD": "✔️",
       "ADVANCED": "✔️",
@@ -62,13 +69,7 @@ const prices = [
       "ADVANCED": "✔️",
       "FULL": "✔️"
     },
-    {
-      "Individual_Jobs": "Cables supplied FOC",
-      "Price": "n/a",
-      "STANDARD": false,
-      "ADVANCED": "✔️",
-      "FULL": "✔️"
-    },
+
     {
       "Individual_Jobs": "Tyres fitted",
       "Price": "£10",
