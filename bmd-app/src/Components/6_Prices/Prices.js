@@ -6,16 +6,19 @@ import "./Prices.css";
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'YOUR_API_KEY'}).base('appgfB11h54LqZPOd');
 
+
+
 function Prices() {
 
   useEffect(() => {
-    
+
   })
 
   // Attempt to get information from Airtable
   base('Labour Charges').select({
     // Selecting the first 3 records in Grid view:
     view: "Website",
+    // Fields I want returned from the Dans Airtable Wesbite Schema
     fields: ["Job", "Notes", "Website prices", "Area of Bike", "STANDARD", "FULL", "ADVANCED", "Advanced optional"]
 }).eachPage(function page(records, fetchNextPage) {
     // This function (`page`) will get called for each page of records.
