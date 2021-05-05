@@ -13,21 +13,14 @@ export default function Navbar() {
 
   // Function to display Burger Menu
   function handleClick(){
-    console.log("handleclick")
-    setSeeMenu(true);
+    setSeeMenu(!seeMenu);
   }
 
   function handleClose(){
     setSeeMenu(false);
   }
 
-  // I dont know what I was doing here///
-  useEffect(() => {
-    if (seeMenu){
-
-    }
-  })
-
+  
   // Hides NavBar on Scroll
   useEffect(() => {
     const handleScroll = () => {  
@@ -70,7 +63,8 @@ useEffect(() => {
       {!mobileView && <button className='nav-book-now-button'>
                 <a href='#prices' > Book Now </a>
             </button>}
-      {!seeMenu && <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>}
+      {/* {!seeMenu && <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>} */}
+      <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>
       {seeMenu && seeNav && <div className='nav-burger-menu'>
       <a href='#about' onClick={handleClose}>
           <div className='nav-item'>

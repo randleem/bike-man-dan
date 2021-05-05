@@ -28,14 +28,14 @@
 .nav-burger-menu {
   background-color: #ffffff;
   justify-content: right;
-  top: 0;
+  top: 80px;
   right: 0;
   position: fixed;
   float: right;
   cursor: default;
   border: 2px solid #FFDE06;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 10px;
   align-self: center;
   text-align: center;
@@ -78,7 +78,7 @@
   .nav-burger-menu {
     background-color: #ffffff;
     justify-content: right;
-    top: 0;
+    top: 120;
     width: 100%;
     position: fixed;
     float: right;
