@@ -1,6 +1,6 @@
 .navbar {
   background-color: #1f6f42;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +32,14 @@
   right: 0;
   position: fixed;
   float: right;
+  cursor: default;
+  border: 2px solid #FFDE06;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
 }
 
 .nav-number {
@@ -45,9 +53,9 @@
 }
 
 /* Desktop width 1200px */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .nav-title-logo {
-    width: 300px;
+    width: 350px;
   }
 }
 
@@ -76,7 +84,7 @@
     float: right;
   }
   .nav-title-logo {
-    width: 300px;
+    width: 250px;
     /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
@@ -84,9 +92,9 @@
     margin-top: 0.4rem;
   }
 
-  .nav-burger-menu-btn {
+  /* .nav-burger-menu-btn {
     padding: 0 !important;
-  }
+  } */
 
   .navbar {
     display: block;
@@ -98,6 +106,7 @@
 
 .nav-item:hover,
 .nav-number:hover,
-.nav-title:hover {
+.nav-title:hover,
+.nav-book-now-button>a:hover {
   color: #dab001;
 }

@@ -13,10 +13,14 @@ button {
   border: none;
   border-radius: 50px;
   padding: 0.5em 1em 0.5em 1em;
-  margin: 1em;
+  margin: 0.5em;
   font-size: 25px;
   background-color: #1f6f42;
   color: #ffffff;
+}
+
+button:hover{
+  color: #dab001;
 }
 
 a {

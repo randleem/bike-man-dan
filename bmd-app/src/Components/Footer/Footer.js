@@ -15,7 +15,9 @@ function Footer() {
                 </a>
             </div>
             <div className='footer-wrapper'>
-            <p>Contact Us</p>
+            <div>
+                <p>Contact Us</p>
+                </div>
             <div className='footer-number-container'>
                 <a href="tel:07817925929" className='footer-number footer-link-item'><i className="fas fa-phone-alt"></i> 07817 925 929</a>
             </div>

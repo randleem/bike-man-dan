@@ -68,7 +68,7 @@ useEffect(() => {
       <div className="nav-item-container">
       <a href="tel:07817925929" className='nav-number'><i className="fas fa-phone-volume"></i> 07817 925 929</a>
       {!mobileView && <button className='nav-book-now-button'>
-                <a href='#prices' > Book Now <i className="fas fa-angle-right"></i></a>
+                <a href='#prices' > Book Now </a>
             </button>}
       {!seeMenu && <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>}
       {seeMenu && seeNav && <div className='nav-burger-menu'>
@@ -97,9 +97,11 @@ useEffect(() => {
               <h2 > Booking Form </h2>
           </div>
         </a>
+        <div>
         <LoginButton/>
+        </div>
         {mobileView && <button className='nav-book-now-button'>
-                <a href='#prices' > Book Now <i className="fas fa-angle-right"></i></a>
+                <a href='#prices' > Book Now </a>
             </button>}
         </div>
       }</div>

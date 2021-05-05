@@ -1,21 +1,21 @@
 .footer-container {
   background-color: #dab001;
   display: flex;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   /* flex-direction: column; */
   /* justify-content: center; */
   /* align-items: center; */
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 100%;
-  padding: 20px 0px 20px 0px;
+  /* padding: 20px 0px 20px 0px; */
   box-shadow: 0px 0px 12px -5px;
 }
 
 .footer-container > p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+    
 }
 
 .footer-wrapper {
@@ -26,19 +26,20 @@
 }
 
 .footer-logo {
-  width: 90px;
+  width: 130px;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .footer-link-item {
-  padding-top: 1rem;
+  display:block;
+  padding-bottom: 0.5rem;
 }
 
 /* Moile Phone Screens Pixel 411px */
 @media screen and (max-width: 480px) {
   .footer-logo {
-    width: 70px;
+    width: 80px;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
   }
@@ -50,6 +51,7 @@
 
   .footer-wrapper > p {
     padding: 0;
+    font-weight: bold;
   }
 
   .footer-link-item {

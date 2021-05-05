@@ -2,7 +2,7 @@ import React from 'react';
 import './Areas.css';
 
 import WrappedMap from '../GoogleMaps/GoogleMaps';
-
+import PostcodeChecker from './PostcodeChecker.js';
 
 function Areas() {
     return (
@@ -21,6 +21,9 @@ function Areas() {
                 <h3>Typically I will take your bike away to service or repair, and I will bring the bike back to your home</h3>
                 <h3>Some small jobs e.g. puncture repair or a new innertube fitting I will do on site</h3>
                 <h3>Any questions please give me a call</h3>
+            </div>
+            <div className='areas-child areas-postcode-day-checker'>
+                <PostcodeChecker/>
             </div>
             
         </div>
