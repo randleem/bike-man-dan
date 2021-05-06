@@ -9,6 +9,7 @@ function Footer() {
     // BMD Logo in bottom left corner
     return (
         <div className='footer-container'>
+        <div className="footer-content-container">
             <div className='footer-logo'>
                 <a href="http://bikemandan.co.uk/">
                     <img src={logo} alt='bike man dan logo' className='footer-logo'/>
@@ -29,7 +30,7 @@ function Footer() {
             </div>    
             </div>   
             <div className='dummy-div'>
-
+</div>
             </div>
         </div>
     )

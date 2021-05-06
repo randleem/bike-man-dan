@@ -52,6 +52,7 @@ useEffect(() => {
   return (
   <div>
     <nav className='navbar' style={{  top: seeNav ? '0' : '-120px' }}>
+    <div className="navbar-container">
       <a href="http://bikemandan.co.uk/">
         <div className='nav-title'>
             {/* <h1 > BIKE MAN DAN <i className="fas fa-home"></i> </h1> */}
@@ -99,7 +100,7 @@ useEffect(() => {
             </button>}
         </div>
       }</div>
-      
+      </div>
     </nav>
   </div>
   );

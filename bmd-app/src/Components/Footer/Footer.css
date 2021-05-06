@@ -1,15 +1,18 @@
 .footer-container {
   background-color: #dab001;
+  
+  width: 100%;
+  box-shadow: 0px 0px 12px -5px;
+}
+
+.footer-content-container{
+  width: 1200px;
+  margin: auto;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
   font-size: 1rem;
-  width: 100%;
-  /* padding: 20px 0px 20px 0px; */
-  box-shadow: 0px 0px 12px -5px;
 }
 
 .footer-container > p {
