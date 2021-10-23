@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+//Componenets
+import GetJobById from './Components/GetJobById/GetJobById';
+
 function App() {
   // MVP
 //cards - like trello - list of jobs in workshop
@@ -31,7 +34,7 @@ function App() {
   return (
     <div className="app">
     <h1>Jordans App</h1>
-    
+    <GetJobById/>
 
     </div>
   );

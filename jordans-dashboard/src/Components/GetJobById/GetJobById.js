@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react' //rfce
 
 function GetJobById() {
-    const [userJobs, setUserJobs] = useState(null)
+    const [userJobId, setUserJobId] = useState(null)
 
-    function getParameterByName(userId, url = window.location.href) {
-        userId = userId.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + userId + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+ 
+
+    function getQueryStringParameter(){
+        let url = window.location.href
+        let queryString = url.split("?");
+        let customerId = queryString[1].split("=");
+        setUserJobId(customerId[1]);
     }
 
     function getCustomerJob(){
@@ -19,7 +19,7 @@ function GetJobById() {
 
     return (
         <div>
-            
+            <button onClick={getQueryStringParameter}>Window Variable</button>
         </div>
     )
 }
