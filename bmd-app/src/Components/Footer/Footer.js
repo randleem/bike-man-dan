@@ -17,7 +17,7 @@ function Footer() {
             </div>
             <div className='footer-wrapper'>
             <div>
-                <p>Contact Us</p>
+                <h4>Contact Us</h4>
                 </div>
             <div className='footer-number-container'>
                 <a href="tel:07817925929" className='footer-number footer-link-item'><i className="fas fa-phone-alt"></i> 07817 925 929</a>
@@ -29,7 +29,9 @@ function Footer() {
                 <a href="https://www.facebook.com/bmdbrum/" className='footer-facebook footer-link-item'><i className='fab fa-facebook-f'></i> Facebook</a>
             </div>    
             </div>   
-            <div className='dummy-div'>
+            <div className='footer-address-container'>
+            <h4>Address</h4>
+            <p>Butts Lane <br/>Tanworth in Arden <br/>Solihull <br/>West Midlands <br/>B94 5AE</p>
 </div>
             </div>
         </div>

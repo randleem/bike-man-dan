@@ -16,9 +16,7 @@ function Home() {
       <div className="home-container">
         <div className="home-text">
           <p>
-            Hi, my name is Dan, your local mobile bicycle mechanic, I have been
-            proudly serving cyclists in Birmingham and surrounding areas since
-            2011
+          Your local mobile bicycle maintenance and repair service proudly serving cyclists in and around Birmingham since 2011.
           </p>
         </div>
       </div>

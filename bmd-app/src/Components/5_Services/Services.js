@@ -17,8 +17,7 @@ function handleOther(){
             <div className='services-introduction-title'>
                 <h1>Bike Servicing</h1>
                 </div>
-                <h3>To keep your bike in tip top condition, it's a good idea to have it serviced regularly - as often as every 4 months depending on how much you use it and where you store it. If you've ridden many miles between services be prepared for some parts to need replacing.</h3>
-                <h3>A Standard service will get your bike running as safely and smoothly as is possible without “major surgery”. (Please note parts are not included in the price).</h3>
+                <h3>To keep your bike safe and running smoothly its ideal to have it professionally serviced regularly - as often as every 3-6 months depending on how much you use, and where you store it. If you’ve ridden many miles between servicing then some key parts may need replacing. If you’re unsure which service you’l need just give us a call.</h3>
             </div>
             <div className='services-cards'>
                 <ServicesCard 
