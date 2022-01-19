@@ -1,22 +1,35 @@
-import React from 'react';
-import {GoogleMap, withGoogleMap, withScriptjs} from 'react-google-maps';
+import React, { Component } from 'react';
+import GoogleMapReact from 'google-map-react';
 
-// https://www.youtube.com/watch?v=Pf7g32CwX_s
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
+class SimpleMap extends Component {
+  static defaultProps = {
+    center: {
+      lat: 59.95,
+      lng: 30.33
+    },
+    zoom: 11
+  };
 
-function GoogleMaps() {
+  render() {
     return (
-        <div>
-            <GoogleMap defaultZoom={10} defaultCenter={{lat: 52.486244,lng: -1.890401}}>
-
-            </GoogleMap>
-            <div id='map'></div>
-        </div>
-    )
+      // Important! Always set the container height explicitly
+      <div style={{ height: '100vh', width: '100%' }}>
+        <GoogleMapReact
+          //bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+        >
+          <AnyReactComponent
+            lat={59.955413}
+            lng={30.337844}
+            text="My Marker"
+          />
+        </GoogleMapReact>
+      </div>
+    );
+  }
 }
 
-const WrappedMap = withScriptjs(withGoogleMap(GoogleMaps))
-
-export default WrappedMap;
-
-// use dan@bikemandan.co.uk account to get an api key 
+export default SimpleMap;

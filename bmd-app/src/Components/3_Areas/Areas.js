@@ -1,7 +1,8 @@
 import React from 'react';
 import './Areas.css';
+import SimpleMap from '../GoogleMaps/GoogleMaps';
 
-import WrappedMap from '../GoogleMaps/GoogleMaps';
+import WrappedMap from '../[OLD]GoogleMaps/GoogleMaps';
 import PostcodeChecker from './PostcodeChecker.js';
 
 function Areas() {
@@ -25,6 +26,7 @@ function Areas() {
                 <PostcodeChecker/>
             </div>
             </div>
+            <SimpleMap/>
             
             
         </div>
