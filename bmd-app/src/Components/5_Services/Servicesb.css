@@ -1,0 +1,55 @@
+/* .services-introduction-title {
+  background-color: #dab001 !important;
+} */
+
+.services-cards {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.services-cards:hover {
+  /* box-shadow: 0px 0px 12px -5px; */
+}
+
+.services-grid-type,
+.services-grid-price {
+  display: flex;
+  justify-content: center;
+}
+
+.services-grid-content {
+  width: 300px;
+}
+
+/* Desktop width 1200px */
+@media screen and (max-width: 1200px) {
+  .services-cards {
+    display: flex;
+  }
+}
+
+/* Laptop width 1024px */
+@media screen and (max-width: 1024px) {
+  .services-cards {
+    display: flex;
+  }
+}
+
+/* Ipad width 768px */
+@media screen and (max-width: 768px) {
+  .services-cards {
+    display: flex;
+    /* flex: 1;
+    width: 33%; */
+  }
+}
+
+/* Moile Phone Screens Pixel 411px */
+@media screen and (max-width: 480px) {
+  .services-cards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+}

@@ -34,8 +34,23 @@ function Services() {
           // backgroundColor='#514663'
           // fontColor='#FFFFFF'
           price="£35"
-          summary="I will take off your wheel and fit you a brand new innertube or index your gears on site be that at home, work or on the roadside"
-          detail={["fix one", "fix two", "fix 3", "fix 4"]}
+          // summary="I will take off your wheel and fit you a brand new innertube or index your gears on site be that at home, work or on the roadside"
+          summary="We can perform some small repairs at your house or work"
+          detail={[
+            <h3>Jobs available on site:</h3>,
+            <ul>
+              <li>Puncture repair (innertube replacement)</li>
+              <li>Gear indexing</li>
+              <li>Gear cable fitting</li>
+            </ul>,
+            <h4>
+              For more options and best results we recommend booking a
+              collection for individual jobs
+              <br />
+              <br />
+              Minimum spend £35 + parts
+            </h4>,
+          ]}
         />
         <ServicesCard
           title="Standard Service"
@@ -44,8 +59,10 @@ function Services() {
           // backgroundColor='#514663'
           // fontColor='#FFFFFF'
           price="£50"
-          summary="Our standard service will get your bike running as safely and smoothly as is possible without “major surgery”. It includes a safety check and triage report on the condition of the whole bike and all it’s components, which you will approve before we carry out the work. Click to see more info"
+          //summary="Our standard service will get your bike running as safely and smoothly as is possible without “major surgery”. It includes a safety check and triage report on the condition of the whole bike and all it’s components, which you will approve before we carry out the work. Click to see more info"
+          summary="Get your bike running as safely and smoothly as is possible without “major surgery”"
           detail={[
+            <h4>Includes:</h4>,
             <ul>
               <li>
                 Initial inspection and report of entire bike and all components
@@ -54,23 +71,21 @@ function Services() {
               </li>
               <li>
                 Checking for wear and fitting of a new chain if necessary
-                (Important: see our chain wear article!!!)
+                (Important: please see our chain wear article!!!)
               </li>
-              <li>Indexing of all gears (where condition of parts permit)</li>
+              <li>Indexing of front and rear gears</li>
               <li>Tightening all components to the correct torque</li>
               <li>
                 Inflating tyres to correct pressure (where condition permits)
               </li>
               <li>Truing of wheels (spoke tension only - no damaged rims)</li>
-              <li>Adjustment of brake system where possible,</li>
+              <li>Adjustment of brake system for performance and safety</li>
               <li>Fitting of brake pads and cables (where necessary)</li>
+              <li>Adjustment of wheel, bottom bracket and headset bearings</li>
               <li>
-                Adjustment only, of wheel, bottom bracket and headset bearings.
-                (where possible)
-              </li>
-              <li>
-                Basic cleaning of frame, forks and drivetrain to inspect for
-                damage (removal of excessive dirt may incur a cleaning charge)
+                Quick clean of frame, forks and drivetrain to inspect parts for
+                damage (removal of excessive dirt for this purpose may incur a
+                cleaning charge)
               </li>
               <li>
                 Adjustment of the saddle, handlebars and other accessories where
@@ -79,9 +94,10 @@ function Services() {
             </ul>,
             <h3>Not included in the standard service</h3>,
             <ul>
-              <li>Replacement of tyres, tubes</li>
-              <li>Fitting of Cassette / crankset</li>
+              <li>Replacement of tyres/tubes</li>
+              <li>Fitting of cassette/crankset</li>
               <li>Fitting of new wheels</li>
+              <li>Fitting of accessories</li>
               <li>
                 Fitting or servicing of headset, bottom bracket or wheel
                 bearings.
@@ -89,7 +105,7 @@ function Services() {
             </ul>,
             <p>
               The standard service is not suitable for damaged bikes, or bikes
-              that have been ridden for longer than 6 months since the last
+              that have been ridden for longer than 6 months since their last
               service. Please see our Advanced and Full services.
             </p>,
           ]}
@@ -100,8 +116,28 @@ function Services() {
           imageAlt="ladies bike with basket"
           // backgroundColor='#CF5C36'
           price="£130"
-          summary="Get your bike in tip top condition"
-          detail={["fix one", "fix two", "fix 3", "fix 4"]}
+          summary="A complete strip-down and rebuild of your bike"
+          detail={[
+            <h4>Includes:</h4>,
+
+            <p>
+              A full strip down, service, clean, rebuild and set up of your
+              bike. We remove every component down to the frame and forks, clean
+              everything meticulously including the drivetrain, service all
+              headset, bottom bracket and wheel bearings, bleed hydraulic brakes
+              and re-fit every part with the correct lubricants/grease etc. The
+              bike is then setup and test ridden for perfection.
+            </p>,
+            <p>
+              All fitting / upgrading of existing parts is included in the
+              price. The cost of the parts is not included.
+            </p>,
+            <p>
+              Mountain bike servicing may be considerably more expensive if
+              including fork / shock / frame bearing servicing - please get in
+              touch if you need this service.
+            </p>,
+          ]}
         />
       </div>
       <button className="services-button-other" onClick={handleOther}>

@@ -1,0 +1,67 @@
+.footer-container {
+  background-color: #dab001;
+  
+  width: 100%;
+  box-shadow: 0px 0px 12px -5px;
+}
+
+.footer-content-container{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.footer-container > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.footer-wrapper {
+  display: block;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-logo {
+  width: 130px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-link-item {
+  display:block;
+  padding-bottom: 0.5rem;
+}
+
+/* Moile Phone Screens Pixel 411px */
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    width: 80px;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .footer-wrapper {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .footer-wrapper > p {
+    padding: 0;
+    font-weight: bold;
+  }
+
+  .footer-link-item {
+    padding-top: 1rem;
+  }
+
+  .footer-container {
+    padding: 10px 0px 10px 0px;
+  }
+}

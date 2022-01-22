@@ -39,6 +39,10 @@
 
 .services-card-more-info-button {
 }
+li {
+  text-align: left;
+  padding: 4px;
+}
 
 .services-card-modal-close {
   top: 1rem;
