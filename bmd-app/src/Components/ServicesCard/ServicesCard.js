@@ -43,12 +43,12 @@ function ServicesCard({
         style={{
           overlay: {
             backgroundColor: "rgba(31, 111, 66, 0.5)",
-            width: "50vw",
+            width: "100vw",
           },
           content: {
             color: "black",
             borderRadius: "20px",
-            // maxWidth: '300px'
+            width: "90vw",
           },
         }}
       >

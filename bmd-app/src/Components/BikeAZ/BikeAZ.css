@@ -1,0 +1,14 @@
+.bike-az-container {
+  width: 250px;
+  height: 250px;
+}
+
+.bike-az-image {
+  width: 200px;
+  height: auto;
+}
+
+.bike-parts-title,
+.bike-parts-text {
+  color: black;
+}

@@ -1,9 +1,35 @@
 .home-container {
   background-color: #1f6f42;
   color: #ffffff;
-  font-size: 30px;
 }
 
 .home-text {
   padding: 1em;
+}
+
+/* Desktop width 1200px */
+@media screen and (max-width: 1200px) {
+  .home-text {
+    font-size: 30px;
+  }
+}
+
+/* Laptop width 1024px */
+@media screen and (max-width: 1024px) {
+  .home-text {
+  }
+}
+
+/* Ipad width 768px */
+@media screen and (max-width: 768px) {
+  .home-text {
+    font-size: 24px;
+  }
+}
+
+/* Moile Phone Screens Pixel 411px */
+@media screen and (max-width: 480px) {
+  .home-text {
+    font-size: 18px;
+  }
 }

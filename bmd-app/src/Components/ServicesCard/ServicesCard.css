@@ -67,3 +67,26 @@ li {
   align-items: flex-end; */
   bottom: 0;
 }
+
+/* Desktop width 1200px */
+@media screen and (max-width: 1200px) {
+}
+
+/* Laptop width 1024px */
+@media screen and (max-width: 1024px) {
+}
+
+/* Ipad width 768px */
+@media screen and (max-width: 768px) {
+  .services-card-title {
+    font-size: 16px;
+  }
+
+  .services-card-summary {
+    font-size: 14px;
+  }
+}
+
+/* Moile Phone Screens Pixel 411px */
+@media screen and (max-width: 480px) {
+}
