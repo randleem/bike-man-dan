@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "react-dom";
 
 import "./BikeAZ.css";
 
@@ -11,6 +12,7 @@ function BikeAZ(props) {
 
         {/* <p className="bike-parts-text">{props.text}</p> */}
       </a>
+      <Link to={`/bike-parts/${props.link}`} />
     </div>
   );
 }

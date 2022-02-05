@@ -1,6 +1,6 @@
 .hero-container {
-  margin-top: 50px;
-  background: url('./pic10.jpg') center center/cover no-repeat;
+  margin-top: 80px;
+  background: url("./pic3.jpg") center center/cover no-repeat;
   height: 70vh;
   width: 100%;
   display: flex;
@@ -9,15 +9,15 @@
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .hero-announcement,
 .hero-welcome,
 .hero-number {
-  background-color: '#FFFFFF';
-  color: '#7C7C7C';
+  background-color: "#FFFFFF";
+  color: "#7C7C7C";
   font-size: 50px;
   height: 100vg;
   padding: 25px;

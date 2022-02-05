@@ -2,46 +2,79 @@
   justify-content: center;
   /* align-content: center; */
   align-items: center;
+  /* background-color: #dab001; */
+  /* border: #fff; */
 }
 
 th {
   padding: 0.5rem;
-  font-weight: bold;
-  font-size: 24px;
-  background-color: #dab001;
+  font-size: 18px;
+  background-color: #514663;
   color: #fff;
-  /* justify-content: center;
-  align-items: center; */
+  border: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 th:first-of-type {
-  border-top-left-radius: 20px;
   padding-left: 1rem;
   justify-content: left;
-}
-
-th:last-of-type {
-  border-top-right-radius: 20px;
-}
-
-.prices-table-header {
-  text-align: center;
-  justify-content: center;
-}
-
-.prices-table-header:first-child {
   text-align: left;
 }
 
 td {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  font-size: 20px;
-  width: 200px;
+  font-size: 16px;
+  width: 100px;
+}
+
+tr:nth-child(even) {
+  background-color: #daaf0128;
 }
 
 td:first-child {
   text-align: left;
   padding-left: 1rem;
   width: 300px;
+}
+
+/* Desktop width 1200px */
+@media screen and (max-width: 1200px) {
+}
+
+/* Laptop width 1024px */
+@media screen and (max-width: 1024px) {
+}
+
+/* Ipad width 768px */
+@media screen and (max-width: 768px) {
+}
+
+/* Moile Phone Screens Pixel 411px */
+@media screen and (max-width: 480px) {
+  th {
+    padding: 0.2rem;
+    font-size: 12px;
+    background-color: #514663;
+    color: #fff;
+    border: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  td {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 10px;
+    width: 90px;
+  }
+
+  td:first-child {
+    text-align: left;
+    padding-left: 1rem;
+    width: 100px;
+  }
 }

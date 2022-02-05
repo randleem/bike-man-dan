@@ -1,6 +1,6 @@
 .navbar {
   background-color: #1f6f42;
-  height: 80px;
+  /* height: 80px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,17 +13,16 @@
   box-shadow: 0px 0px 20px -5px;
 }
 
-.navbar-container{
+.navbar-container {
   width: 1200px;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
- justify-content: space-between;
- align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-item-container {
-  
   /* justify-content: space-around; */
 }
 
@@ -42,7 +41,7 @@
   position: fixed;
   float: right;
   cursor: default;
-  border: 2px solid #FFDE06;
+  border: 2px solid #ffde06;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 10px;
@@ -60,6 +59,7 @@
   padding: 1rem;
   margin-top: 0.4rem;
   margin-right: auto;
+  height: 80px;
 }
 
 /* Desktop width 1200px */
@@ -73,6 +73,7 @@
 @media screen and (max-width: 1024px) {
   .nav-title-logo {
     width: 300px;
+    height: 80px;
   }
 }
 
@@ -117,6 +118,6 @@
 .nav-item:hover,
 .nav-number:hover,
 .nav-title:hover,
-.nav-book-now-button>a:hover {
+.nav-book-now-button > a:hover {
   color: #dab001;
 }

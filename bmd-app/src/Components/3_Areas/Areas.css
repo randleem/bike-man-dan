@@ -1,9 +1,10 @@
 .areas-container {
   display: flex;
+  background-color: #dab001;
 }
 
 .areas-child {
-  flex: 1;
+  /* flex: 1; */
 }
 
 .areas-google-map {
@@ -14,4 +15,3 @@
 .areas-text {
   padding: 1em;
 }
-
