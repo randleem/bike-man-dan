@@ -1,11 +1,11 @@
 .footer-container {
-  background-color: #dab001;
-  
+  background-color: #0d2615;
+  color: white;
   width: 100%;
   box-shadow: 0px 0px 12px -5px;
 }
 
-.footer-content-container{
+.footer-content-container {
   width: 1200px;
   margin: auto;
   display: flex;
@@ -16,9 +16,8 @@
 }
 
 .footer-container > p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-    
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .footer-wrapper {
@@ -35,7 +34,7 @@
 }
 
 .footer-link-item {
-  display:block;
+  display: block;
   padding-bottom: 0.5rem;
 }
 

@@ -1,9 +1,15 @@
 .about-card-container {
   display: flex;
+  padding: 50px 0px;
+  background-color: #0d2615;
 }
 
 /* Desktop width 1200px */
 @media screen and (max-width: 1200px) {
+  .about-introduction {
+    padding: 50px 0px;
+  }
+
   .about-card-container {
     display: flex;
   }

@@ -9,7 +9,7 @@
 th {
   padding: 0.5rem;
   font-size: 18px;
-  background-color: #514663;
+  background-color: #0d2615;
   color: #fff;
   border: #fff;
   justify-content: center;
@@ -31,7 +31,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #daaf0128;
+  background-color: #daaf014f;
 }
 
 td:first-child {
