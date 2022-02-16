@@ -1,7 +1,10 @@
+/* .about-card-parent-container {
+  background-color: #0d2615;
+} */
+
 .about-card-container {
   display: flex;
   padding: 50px 0px;
-  background-color: #0d2615;
 }
 
 /* Desktop width 1200px */

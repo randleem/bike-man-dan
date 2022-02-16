@@ -12,7 +12,7 @@ function BikeAZ(props) {
 
         {/* <p className="bike-parts-text">{props.text}</p> */}
       </a>
-      <Link to={`/bike-parts/${props.link}`} />
+      {/* <Link to={`/bike-parts/${props.link}`} /> */}
     </div>
   );
 }
