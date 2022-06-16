@@ -8,7 +8,7 @@
 }
 
 /* Desktop width 1200px */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .home-text {
     font-size: 30px;
   }
@@ -17,6 +17,7 @@
 /* Laptop width 1024px */
 @media screen and (max-width: 1024px) {
   .home-text {
+    font-size: 30px;
   }
 }
 

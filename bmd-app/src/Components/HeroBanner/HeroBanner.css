@@ -11,16 +11,20 @@
   object-fit: contain;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  position: relative;
 }
-
+/* .hero-container-text,
 .hero-announcement,
 .hero-welcome,
-.hero-number {
-  background-color: "#FFFFFF";
+.hero-number,  */
+#hero-container-text {
+  position: absolute;
+  background-color: "#dab002" !important;
   color: "#7C7C7C";
-  font-size: 50px;
+  font-size: 30px;
   height: 100vg;
   padding: 25px;
+  text-align: right;
   /* text-align: center;
   display: flex;
   flex-direction: column;
@@ -28,4 +32,5 @@
   align-items: center; */
   margin: 30px;
   border-radius: 30px;
+  z-index: 100;
 }
