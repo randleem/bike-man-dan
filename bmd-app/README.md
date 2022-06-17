@@ -1,6 +1,6 @@
 # Bike Man Dan Website
 
-![Bike Man Dan servicing bikes in Birmingham](./src/Images/pic2.jpg)
+![Bike Man Dan servicing bikes in Birmingham](./src/Images/pic3.png)
 
 # New Website
 
