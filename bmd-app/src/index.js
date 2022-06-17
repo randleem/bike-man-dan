@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import BikeParts from "./Components/8_BikeParts/BikeParts";
@@ -15,14 +15,7 @@ ReactDOM.render(
     redirectUri={"http://localhost:3000/customer"}
   >
     <React.StrictMode>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route path="bike-parts" element={<BikeParts />} />
-            <Route path="booking-form" element={<BookingPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <App />
     </React.StrictMode>
     ,
   </Auth0Provider>,

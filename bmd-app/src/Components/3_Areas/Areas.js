@@ -7,7 +7,7 @@ import PostcodeChecker from "./PostcodeChecker.js";
 
 function Areas() {
   return (
-    <div id="areas" className="areas-container">
+    <div id="areas" className="areas-container central-container">
       {/* <div className='areas-child areas-google-map'>
                 <WrappedMap 
                         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
@@ -32,7 +32,7 @@ function Areas() {
           <PostcodeChecker />
         </div>
       </div>
-      <SimpleMap />
+      {/* <SimpleMap /> */}
     </div>
   );
 }

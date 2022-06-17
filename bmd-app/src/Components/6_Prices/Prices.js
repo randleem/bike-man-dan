@@ -63,18 +63,18 @@ function Prices() {
       accessor: "STANDARD",
     },
     {
-      Header: "Advanced £85",
+      Header: "Advanced £95",
       accessor: "ADVANCED",
     },
     {
-      Header: "Full £130",
+      Header: "Full £145",
       accessor: "FULL",
     },
   ];
 
   return (
     <div id="prices" className="prices-container">
-      <h1>Prices</h1>
+      <h3>Prices</h3>
       <div className="prices-table-container">
         <PricesTable data={prices} columns={columns} />
       </div>

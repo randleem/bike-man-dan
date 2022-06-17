@@ -4,6 +4,7 @@
   margin: 2em;
   border-radius: 5px;
   font: 20px;
+  background-color: #fff;
 }
 
 .services-card-content {
@@ -71,10 +72,16 @@ li {
 
 /* Desktop width 1200px */
 @media screen and (max-width: 1200px) {
+  .modal {
+    width: 40vm;
+  }
 }
 
 /* Laptop width 1024px */
 @media screen and (max-width: 1024px) {
+  .modal {
+    width: 40vm;
+  }
 }
 
 /* Ipad width 768px */

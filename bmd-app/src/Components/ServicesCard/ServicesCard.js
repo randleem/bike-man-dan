@@ -40,6 +40,8 @@ function ServicesCard({
       <Modal
         isOpen={fullDetail}
         onRequestClose={() => setFullDetail(false)}
+        contentLabel="modal"
+        // className="modal"
         style={{
           overlay: {
             backgroundColor: "rgba(31, 111, 66, 0.5)",
@@ -48,7 +50,7 @@ function ServicesCard({
           content: {
             color: "black",
             borderRadius: "20px",
-            width: "90vw",
+            // width: "90vw",
           },
         }}
       >

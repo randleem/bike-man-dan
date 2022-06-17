@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import LoginButton from "../Login/Login";
-import logo from "./NameLogo.png";
+import logo from "./newLogo.png";
 import "./Navbar.css";
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 
 let potenchColor = [
   "#1f1f1f",
@@ -86,7 +86,9 @@ export default function Navbar() {
             </a>
             {!mobileView && (
               <button className="nav-book-now-button">
-                <a href="#prices"> Book Now </a>
+                {/* <Link to="/booking-form">
+                  Book Now <i className="fas fa-angle-right"></i>
+                </Link> */}
               </button>
             )}
             {/* {!seeMenu && <button onClick={handleClick} className='nav-burger-menu-btn'><i className="fas fa-bars"></i></button>} */}
