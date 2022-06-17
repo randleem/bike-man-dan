@@ -14,6 +14,10 @@ function Home() {
     <div>
       <HeroBanner />
       <div className="home-container"></div>
+      <p className="home-text">
+        Your local mobile bicycle maintenance and repair service proudly serving
+        cyclists in and around Birmingham since 2011
+      </p>
       <About />
       {/* <Areas /> */}
       <Services />

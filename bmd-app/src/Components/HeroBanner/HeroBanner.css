@@ -11,7 +11,7 @@
   object-fit: contain;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  position: relative;
+  /* position: relative; */
 }
 /* .hero-container-text,
 .hero-announcement,
@@ -30,7 +30,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  margin: 30px;
+  /* margin: 30px; */
   border-radius: 30px;
   z-index: 100;
 }
